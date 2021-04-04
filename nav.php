@@ -14,11 +14,11 @@ if ($_SESSION['valid_user'])
 		$database_name = 'tennis';
 	}	
 
-		$table_players = "players_wed";
-		$table_availability = "availability_wed";
-		$table_play_dates = "play_dates_wed";
-		$table_schedule = "schedule_wed";
-
+	$table_players = "players_demo";
+	$table_availability = "availability_demo";
+	$table_play_dates = "play_dates_demo";
+	$table_schedule = "schedule_demo";
+	
 	// Get the real name of the user
 	
 	

@@ -9,16 +9,16 @@
 		$database_name = 'tennis';
 	}	
         
-		$table_players = "players_wed";
-		$table_availability = "availability_wed";
-		$table_play_dates = "play_dates_wed";
-		$table_schedule = "schedule_wed";
-
+        $table_players = "players_demo";
+        $table_availability = "availability_demo";
+        $table_play_dates = "play_dates_demo";
+        $table_schedule = "schedule_demo";
+        
 //This is the information we initialize the database with.
 
         $first_name = "Barry";
         $last_name = "St. Pierre";
-        $phone_1 = "734-994-5821";
+        $phone_1 = "";
         $phone_2 = "734-657-7730";
         $email = "barry@stpierre.com";
         $username = "barry";
