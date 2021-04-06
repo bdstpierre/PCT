@@ -85,7 +85,7 @@ include("nav.php");
 
 				$sub_query = "select  
 					$table_players.first_name,
-					$table_players.player_id as player,
+					$table_players.player_id,
 					$table_availability.avail as avail
 					from $table_availability, $table_players
 					where week_no = $i 
@@ -102,14 +102,13 @@ include("nav.php");
 				while($the_sub_array = mysql_fetch_array($sub_result))
 				{
 					extract ($the_sub_array);
-					$status[$player] = $avail;
+					$status[$player_id] = $avail;
 				}
 				
 // Get one row of Schedule
 
 				$sub_query = "select  
-				    $table_players.first_name,
-				    $table_schedule.player_id as player, 
+				    $table_players.player_id,
 					$table_schedule.schedule as schedule
 					from $table_schedule, $table_players
 					where $table_players.player_id = $table_schedule.player_id and week_no = $i 
@@ -126,11 +125,18 @@ include("nav.php");
 				{
 					extract ($the_sub_array);
 					$sched[$player_id] = $schedule;
+// Test code
+// echo "$sub_query</br>\n";
+// echo "***$sched[$player_id]***</br>\n";
+// echo "***$schedule***</br>\n";
+// echo "***$player_id***</br>\n";
+// echo "***$sched[10]***</br>\n";
+
 				}
 				
 				foreach($sched as $key => $value)
 				{
-					$label = "week_" . "$key"  . "_" . $i;
+					$label = "week_" . $key  . "_" . $i;
 					echo "<td>$status[$key] : \n";
 					echo "<select name = '$label' size = 1>\n";
 					switch ($value)
