@@ -204,7 +204,7 @@ include("nav.php");
 				while($the_sub_array = mysql_fetch_array($sub_result))
 				{
 					extract ($the_sub_array);
-					$sched[$player] = $schedule;
+					$sched[$player_id] = $schedule;
 				}
 				
 				foreach($sched as $key => $value)
