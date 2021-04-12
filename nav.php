@@ -58,7 +58,7 @@ if ($_SESSION['valid_user'])
 	echo "Welcome<br>$first_name $last_name<br>\n";
 	echo "<a href = 'index.php'>Home</a><br>\n";
 	echo "<a href = 'avail.php'>Availability</a><br>\n";
-	if ( $_SESSION['valid_user'] == 'barry'||  $_SESSION['valid_user'] == 'jeffreylhill55')
+	if ( $_SESSION['valid_user'] == 'barry'||  $_SESSION['valid_user'] == 'bob')
 	{
 		echo "<a href = 'schedule.php'>Make Schedule</a><br>\n";
 		echo "<a href = 'users.php'>Manage Users</a><br>\n";
@@ -77,7 +77,7 @@ else
 	echo "<a href = 'login.php'>Login</a><br>\n";
 	echo "<a href = 'index.php'>Home</a><br>\n";
 //	echo "<a href = 'print.php'>Printer Friendly</a><br>\n";
-	echo "<a href = 'logout.php'>Log Out</a><br>\n";
+//	echo "<a href = 'logout.php'>Log Out</a><br>\n";
 }
 
 //	mysql_free_result($result);
