@@ -8,6 +8,8 @@ I created this website to manage the information of who is available which weeks
 The website was originally written in PHP version 5.6 (or earlier) and does not use CSS but does use MySQL.  I am slowly working to convert it to version 7.3 functions.  To aid in this I have creaeted a variable named $php_flag.  If this variable is 'TRUE' then the version 5.3 instructions are run, otherwise the 7.3 version instructions
 are run.  The converted files are not deployed yet.
 
+![Image of CPT website showing a typical PCT schedule](assets/images/homepage.png)
+
 ## Table of Contents
 If your README is long, add a table of contents to make it easy for users to find what they need.
 - [Installation](#installation)
